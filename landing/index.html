@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HavaRoute — Navigate Your Next Escape</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Nav -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#">
+        <img src="assets/haveroute-logo.png" alt="HavaRoute Logo" class="brand-logo" />
+      </a>
+
+      <div class="">
+      </div>
+
+      <nav class="links">
+        <a href="#">Destinations</a>
+        <a href="#">Havamap</a>
+        <a href="#">Community</a>
+        <a href="#">Packages</a>
+      </nav>
+
+      <div class="cta">
+        <button class="btn btn--ghost">Login</button>
+        <button class="btn btn--primary">Get started</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <h1 class="hero__title">
+          Navigate Your Next<br />
+          <span class="tight">Escape</span>
+        </h1>
+
+        <p class="hero__desc">
+          An interactive mapping application powered by AI that
+          analyzes geographic data to provide insights, recommendations,
+        </p>
+
+        <button class="cta-big">
+          <span>Exclusive features</span>
+        </button>
+      </div>
+
+      <!-- Decorative world with animated pins -->
+      <div class="hero__art" aria-hidden="true">
+        <img src="assets/map.png" alt="World Map" class="hero-map" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section features" id="features">
+    <div class="container">
+      <h2 class="section-title">
+        Exclusive <span class="accent-italic">Features</span>
+      </h2>
+
+      <div class="feature-grid">
+        <!-- Card 1 -->
+        <article class="feature-card will-reveal" style="--delay:0ms">
+          <div class="badge badge--orange">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 4.13 6.11 12.17 6.38 12.51.34.43.9.43 1.24 0C12.89 21.17 19 13.13 19 9a7 7 0 0 0-7-7Zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5Z"/>
+            </svg>
+          </div>
+
+          <h3 class="feature-title">HavaMap</h3>
+          <p class="feature-desc">
+            Uncover hidden trails & must‑visit spots — start exploring now!
+          </p>
+
+          <button class="feature-cta feature-cta--dark">
+            Explore
+          </button>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="feature-card will-reveal" style="--delay:120ms">
+          <div class="badge badge--blue">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2Zm-1 14-4-4 1.41-1.41L11 12.17l5.59-5.58L18 8l-7 8Z"/>
+            </svg>
+          </div>
+
+          <h3 class="feature-title">Check status</h3>
+          <p class="feature-desc">
+            Uncover hidden trails & must‑visit spots — start exploring now!
+          </p>
+
+          <button class="feature-cta">
+            Explore
+          </button>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="feature-card will-reveal" style="--delay:240ms">
+          <div class="badge badge--pink">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M4 5h16v2H4V5Zm0 6h10v2H4v-2Zm0 6h16v2H4v-2Zm12-8 4 3-4 3V9Z"/>
+            </svg>
+          </div>
+
+          <h3 class="feature-title">Plan My Trip</h3>
+          <p class="feature-desc">
+            Uncover hidden trails & must‑visit spots — start exploring now!
+          </p>
+
+          <button class="feature-cta">
+            Explore
+          </button>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="section recos" id="recommendations">
+    <div class="container recos__grid">
+      <!-- Left copy -->
+      <div class="recos__copy will-reveal" style="--delay:0ms">
+        <h2 class="recos__title">Personalized<br/>Recommendations</h2>
+        <p class="recos__desc">
+          Smart&nbsp; trips, tailored just for you — based on your
+          mood and style
+        </p>
+  
+        <a href="#" class="btn-xl">
+          <span>Explore all</span>
+        </a>
+      </div>
+  
+      <!-- Right stacked cards -->
+      <div class="recos__cards will-reveal" style="--delay:140ms" aria-hidden="true">
+        <!-- Back card -->
+        <div class="rec-card rec-card--blue tilt" data-tilt>
+          <div class="rec-card__icon">≈</div>
+          <h3 class="rec-card__title">Beach</h3>
+          <p class="rec-card__text">Sun, sand & calm waters — unwind and relax.</p>
+          <div class="rec-card__dots">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+  
+        <!-- Front card -->
+        <div class="rec-card rec-card--green tilt lift" data-tilt>
+          <div class="rec-card__icon">A</div>
+          <h3 class="rec-card__title">Adventure</h3>
+          <p class="rec-card__text">
+            Thrilling experiences and heart‑pumping activities await
+          </p>
+          <div class="rec-card__dots">
+            <span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section deals" id="deals">
+    <div class="container">
+      <h2 class="deals__title">Featured</h2>
+      <p class="deals__subtitle">Packages & <span class="accent-italic">Deals</span></p>
+  
+      <div class="deal-grid">
+        <!-- Card 1 -->
+        <article class="deal-card will-reveal" style="--delay:0ms">
+          <a href="#" class="deal-link" aria-label="Open Petra, Jordan package">
+            <figure class="deal-media">
+              <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&q=80" alt="Petra, Jordan" loading="lazy">
+              <figcaption>Petra, Jordan</figcaption>
+            </figure>
+            <button class="deal-open" aria-hidden="true">↗</button>
+          </a>
+        </article>
+  
+        <!-- Card 2 -->
+        <article class="deal-card will-reveal" style="--delay:120ms">
+          <a href="#" class="deal-link" aria-label="Open Kyoto, Japan package">
+            <figure class="deal-media">
+              <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=1200&q=80" alt="Kyoto, Japan" loading="lazy">
+              <figcaption>Kyoto, Japan</figcaption>
+            </figure>
+            <button class="deal-open" aria-hidden="true">↗</button>
+          </a>
+        </article>
+  
+        <!-- Card 3 -->
+        <article class="deal-card will-reveal" style="--delay:240ms">
+          <a href="#" class="deal-link" aria-label="Open Petra, Jordan package">
+            <figure class="deal-media">
+              <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=1200&q=80" alt="Petra, Jordan" loading="lazy">
+              <figcaption>Petra, Jordan</figcaption>
+            </figure>
+            <button class="deal-open" aria-hidden="true">↗</button>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section journeys" id="journeys">
+    <h2 class="deals__title">Beyond the <span class="accent-italic">Map</span></h2>
+    <div class="container journeys__grid">
+      <!-- Left: Stacked images -->
+      <div class="journeys__images">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80" alt="Hills and mist" class="journey-img" />
+        <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=800&q=80" alt="Trees and fog" class="journey-img" />
+        <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=800&q=80" alt="Grassy hills" class="journey-img" />
+      </div>
+      <!-- Right: Text block + button -->
+      <div class="journeys__text">
+        <p class="journeys__desc fade-on-scroll">
+          HavaRoute opens the door to unforgettable places <br>
+          from iconic landmarks to the quiet<br>
+          corners only locals know.
+        </p>
+        <p class="journeys__desc fade-on-scroll">
+          Every route is a chance to discover<br>
+          new views, new flavors,<br>
+          and new stories waiting just<br>
+          beyond the horizon.
+        </p>
+        <p class="journeys__desc fade-on-scroll">
+          Your next adventure could be Meppadi’s<br>
+          misty tea hills,<br>
+          Banasura’s shimmering waters,<br>
+          or Ponmudi’s golden trails —<br>
+          and there’s so much more to explore.
+        </p>
+        <a class="journeys__btn" href="#">Explore</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section latest-hero" id="latest">
+    <div class="container">
+      <!-- Title -->
+      <h2 class="latest-title">
+        Latest <span class="accent-italic">News</span>
+      </h2>
+  
+      <!-- Lead story -->
+      <div class="lead-grid will-reveal" style="--delay:0ms">
+        <figure class="lead-media">
+          <img src="https://static2.tripoto.com/media/filter/tst/img/OgData/1596047753_1595235589_spitimonastery_fotor.jpg" alt="Traveler holding a red folder against blue sky">
+        </figure>
+  
+        <div class="lead-copy">
+          <div class="lead-kicker">Travel Advicer</div>
+          <h3 class="lead-head">
+            HavaRoute helps travelers<br>
+            uncover hidden gems with<br>
+            smart routes and local insights
+          </h3>
+          <div class="lead-meta">Hera John · 25 Jan 2022</div>
+        </div>
+      </div>
+  
+      <!-- News row -->
+      <div class="news-row">
+        <!-- Card 1 -->
+        <article class="news-mini will-reveal" style="--delay:120ms">
+          <div class="mini-media">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800&q=80" alt="Traveler with red folder">
+          </div>
+          <div class="mini-copy">
+            <div class="mini-kicker">Finance Advicer</div>
+            <h4 class="mini-head">
+              HavaRoute makes exploring India and beyond easy with personalized travel routes.
+            </h4>
+            <div class="mini-meta">Hera John · 25 Jan 2022</div>
+          </div>
+        </article>
+  
+        <!-- Card 2 -->
+        <article class="news-mini will-reveal" style="--delay:220ms">
+          <div class="mini-media">
+            <img src="https://images.unsplash.com/photo-1518544801976-3e188ea1cbee?w=800&q=80" alt="Red folder in hands">
+          </div>
+          <div class="mini-copy">
+            <div class="mini-kicker">Finance Advicer</div>
+            <h4 class="mini-head">
+              HavaRoute makes exploring India and beyond easy with personalized travel routes.
+            </h4>
+            <div class="mini-meta">Hera John · 25 Jan 2022</div>
+          </div>
+        </article>
+  
+        <!-- Card 3 -->
+        <article class="news-mini will-reveal" style="--delay:320ms">
+          <div class="mini-media">
+            <img src="https://images.unsplash.com/photo-1516822003754-cca485356ecb?w=800&q=80" alt="Traveler covering face with red board">
+          </div>
+          <div class="mini-copy">
+            <div class="mini-kicker">Finance Advicer</div>
+            <h4 class="mini-head">
+              Discover unique destinations with HavaRoute’s smart recommendations and maps.
+            </h4>
+            <div class="mini-meta">Hera John · 25 Jan 2022</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="testimonials__title">
+        Reviews &nbsp;<span class="accent-italic">Testimonials</span>
+      </h2>
+      <div class="testimonial-grid">
+        <!-- Card 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-head">
+            <span class="testimonial-avatar"></span>
+            <div>
+              <span class="testimonial-name">Alex Carter</span>
+              <span class="testimonial-handle">@alextech</span>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            Started using TechNest as a gadget reviewer, and within just 2 weeks, gained 200 new readers! 📈<br>
+            The platform’s design is so user-friendly – easy to navigate, clean layout, and perfect for sharing insights.<br>
+            Who knew people could be so interested in my take on the latest tech? 😊<br>
+            Check out @TechNest and stay informed!
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-head">
+            <span class="testimonial-avatar"></span>
+            <div>
+              <span class="testimonial-name">Alex Carter</span>
+              <span class="testimonial-handle">@alextech</span>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            Started using TechNest as a gadget reviewer, and within just 2 weeks, gained 200 new readers! 📈<br>
+            The platform’s design is so user-friendly – easy to navigate, clean layout, and perfect for sharing insights.
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-head">
+            <span class="testimonial-avatar"></span>
+            <div>
+              <span class="testimonial-name">John Doe</span>
+              <span class="testimonial-handle">@johndoe</span>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            Started using TechNest as a gadget reviewer, and within just 2 weeks, gained 200 new readers! 📈<br>
+            The platform’s design is so user-friendly – easy to navigate, clean layout, and perfect for sharing insights.
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="testimonial-card">
+          <div class="testimonial-head">
+            <span class="testimonial-avatar"></span>
+            <div>
+              <span class="testimonial-name">Alex Carter</span>
+              <span class="testimonial-handle">@alextech</span>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            Started using TechNest as a gadget reviewer, and within just 2 weeks, gained 200 new readers! 📈<br>
+            The platform’s design is so user-friendly – easy to navigate, clean layout, and perfect for sharing insights.<br>
+            Who knew people could be so interested in my take on the latest tech? 😊<br>
+            Check out @TechNest and stay informed!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+<section class="section community" id="community">
+  <div class="container">
+    <h2 class="community__eyebrow">
+      Community <a href="#" class="join-link">Join</a>
+    </h2>
+  </div>
+
+  <div class="community-cta">
+    <!-- ambient orbs -->
+    <span class="orb orb--l"></span>
+    <span class="orb orb--r"></span>
+
+    <div class="community-cta__inner">
+      <p class="cta-sub">Have a route in mind.!</p>
+      <h3 class="cta-head">Let’s talk</h3>
+
+      <div class="cta-actions">
+        <a href="#contact" class="btn-cta">Start a conversation</a>
+        <a href="#features" class="btn-ghost">Explore features</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" id="footer">
+  <div class="container footer-top">
+    <!-- Brand -->
+    <div class="f-brand">
+  
+      <div class="f-name">Havaroute</div>
+      <p class="f-copy">
+        Our trusted travel companion — discover hidden gems, plan trips, and explore the world with ease
+      </p>
+      <div class="f-social">
+        <a href="https://www.instagram.com/havaroute/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+          <i class="fab fa-instagram"></i>
+          Follow us on Instagram
+        </a>
+      </div>
+    </div>
+
+    <!-- Columns -->
+    <div class="f-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#features">Exclusive Features</a></li>
+        <li><a href="#deals">Packages & Deals</a></li>
+        <li><a href="#recommendations">Popular Destinations</a></li>
+        <li><a href="#features">HavaMap</a></li>
+      </ul>
+    </div>
+
+    <div class="f-col">
+      <h4>Travel Guides</h4>
+      <ul>
+        <li><a href="#news">Blog & Stories</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Payment Guide</a></li>
+      </ul>
+    </div>
+
+    <div class="f-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#community">Contact</a></li>
+        <li><a href="#">Partners</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom__inner">
+      <small>© 2025 HavaRoute. All rights reserved.</small>
+      <nav class="f-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cancellation Policy</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
